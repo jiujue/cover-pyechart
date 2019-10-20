@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset=utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/github-markdown.css')}}" type="text/css">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+    <article class="markdown-body ">
+        <h1 >Pyecharts - displayi site</h1>
+        <br/>
+        <h2>关于项目</h2>
+        <p>pyecharts 是一个用于生成 Echarts 图表的类库。Echarts 是百度开源的一个数据可视化 JS 库。用 Echarts 生成的图可视化效果非常棒。</p>
+        <h2>关于本网站</h2>
+        <p>本网站只是用于展示使用 pyecharts 生成的图的效果，如果您对项目感兴趣，可前往 <br/>
+        <a href="https://github.com/pyecharts/pyecharts">pyecharts/pyecharts</a> 了解更多内容</p>
+    </article>
+    <footer class="container-fluid foot-wrap">
+        <p align="center" style="margin-top: 20px;color:#878B91;">
+            Copyright &copy; 9012 
+        </p>
+    </footer>
+{% endblock %}
+
